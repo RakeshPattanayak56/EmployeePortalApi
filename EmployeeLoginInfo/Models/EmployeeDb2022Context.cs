@@ -30,7 +30,7 @@ namespace EmployeeLoginInfo.Models
         {
             if (!optionsBuilder.IsConfigured)
             {
-                optionsBuilder.UseSqlServer("Server=ENCOPDBANLT0135\\SQLEXPRESS;Database=EmployeeDb2022;Integrated Security=True");
+                optionsBuilder.UseSqlServer("Server=employeecontrol.database.windows.net;Database=employeedb;User Id=rakesh;Password=Employeecontrol@123;");
             }
         }
 
