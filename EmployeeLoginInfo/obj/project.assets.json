@@ -2184,11 +2184,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\rakesh.pattanayak\\source\\repos\\EmployeeLoginInfo\\EmployeeLoginInfo\\EmployeeLoginInfo.csproj",
+      "projectUniqueName": "C:\\Users\\rakesh.pattanayak\\Documents\\GitHub\\EmployeePortalApi\\EmployeeLoginInfo\\EmployeeLoginInfo.csproj",
       "projectName": "EmployeeLoginInfo",
-      "projectPath": "C:\\Users\\rakesh.pattanayak\\source\\repos\\EmployeeLoginInfo\\EmployeeLoginInfo\\EmployeeLoginInfo.csproj",
+      "projectPath": "C:\\Users\\rakesh.pattanayak\\Documents\\GitHub\\EmployeePortalApi\\EmployeeLoginInfo\\EmployeeLoginInfo.csproj",
       "packagesPath": "C:\\Users\\rakesh.pattanayak\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\rakesh.pattanayak\\source\\repos\\EmployeeLoginInfo\\EmployeeLoginInfo\\obj\\",
+      "outputPath": "C:\\Users\\rakesh.pattanayak\\Documents\\GitHub\\EmployeePortalApi\\EmployeeLoginInfo\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
