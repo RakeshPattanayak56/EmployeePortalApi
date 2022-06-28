@@ -2178,19 +2178,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\rahul\\.nuget\\packages\\": {}
+    "C:\\Users\\rakesh.pattanayak\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Repository\\Trurating.com\\EmployeePortalApi\\EmployeeLoginInfo\\EmployeeLoginInfo.csproj",
+      "projectUniqueName": "C:\\Users\\rakesh.pattanayak\\Documents\\GitHub\\EmployeePortalApi\\EmployeeLoginInfo\\EmployeeLoginInfo.csproj",
       "projectName": "EmployeeLoginInfo",
-      "projectPath": "D:\\Repository\\Trurating.com\\EmployeePortalApi\\EmployeeLoginInfo\\EmployeeLoginInfo.csproj",
-      "packagesPath": "C:\\Users\\rahul\\.nuget\\packages\\",
-      "outputPath": "D:\\Repository\\Trurating.com\\EmployeePortalApi\\EmployeeLoginInfo\\obj\\",
+      "projectPath": "C:\\Users\\rakesh.pattanayak\\Documents\\GitHub\\EmployeePortalApi\\EmployeeLoginInfo\\EmployeeLoginInfo.csproj",
+      "packagesPath": "C:\\Users\\rakesh.pattanayak\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\rakesh.pattanayak\\Documents\\GitHub\\EmployeePortalApi\\EmployeeLoginInfo\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\rahul\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\rakesh.pattanayak\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -2198,8 +2203,7 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "https://pkgs.dev.azure.com/trurating/_packaging/TruRating/nuget/v3/index.json": {},
-        "https://trurating.pkgs.visualstudio.com/_packaging/TruRating/nuget/v3/index.json": {}
+        "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net6.0": {
@@ -2258,7 +2262,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.200\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
       }
     }
   }
