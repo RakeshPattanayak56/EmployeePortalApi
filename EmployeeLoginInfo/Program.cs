@@ -12,6 +12,7 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddScoped<IEmployeeeDetails, EmployeeService>();
+builder.Services.AddScoped<IAddEmployeeDetails, AddEmployeeService>();
 
 
 builder.Services.AddCors(options =>
