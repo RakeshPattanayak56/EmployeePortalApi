@@ -12,8 +12,8 @@ namespace EmployeeLoginInfo.Models
         public string PermanentAddress { get; set; }
         public string City { get; set; }
         public string State { get; set; }
-        public int PostalCode { get; set; }
-        public int PhoneNo { get; set; }
+        public string PostalCode { get; set; }
+        public string PhoneNo { get; set; }
         public string EmailAddress { get; set; }
     }
 }
