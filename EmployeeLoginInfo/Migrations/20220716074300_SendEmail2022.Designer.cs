@@ -4,6 +4,7 @@ using EmployeeLoginInfo.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,10 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace EmployeeLoginInfo.Migrations
 {
     [DbContext(typeof(EmployeeDb2022Context))]
-    partial class EmployeeDb2022ContextModelSnapshot : ModelSnapshot
+    [Migration("20220716074300_SendEmail2022")]
+    partial class SendEmail2022
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -95,7 +97,7 @@ namespace EmployeeLoginInfo.Migrations
                     b.Property<DateTime?>("Login")
                         .HasColumnType("datetime2");
 
-                    b.Property<DateTime?>("Logout")
+                    b.Property<DateTime>("Logout")
                         .HasColumnType("datetime2");
 
                     b.Property<int>("UserId")
