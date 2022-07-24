@@ -17,14 +17,14 @@ namespace EmployeeLoginInfo.Controllers
         {
             _emailService = emailService;
         }
-        //TODO: Remove after Test
+
         [HttpGet]
         [Route("SendEmail")]
         public async Task<IActionResult> SendEmail(string Email,DateTime Date)
         {
-            var employeeDetail = _emailService.SendEmail();
+            var employeeDetail = _emailService.SendEmail(Date);
 
-            return Ok();
+            return Ok(employeeDetail);
         }
     }
 }

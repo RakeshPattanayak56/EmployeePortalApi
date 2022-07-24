@@ -15,6 +15,7 @@ namespace StudentLoginInfo.Models
         public DateTime? LastUpdateTime { get; set; }
         public string? LastUpdatedBy { get; set; }
         public bool IsActive { get; set; }
+        //public string Email { get; set; }
     }
 }
     

@@ -4,6 +4,6 @@ namespace EmployeeLoginInfo.Models
 {
     public interface IEmailService
     {
-       Task< IEnumerable <EmployeeDetail>> SendEmail();
+       Task< IEnumerable <EmployeeDetail>> SendEmail(DateTime Date);
     }
 }

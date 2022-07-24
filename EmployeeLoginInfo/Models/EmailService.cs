@@ -23,19 +23,20 @@ namespace EmployeeLoginInfo.Models
             _emailNotification = emailNotification;
         }
 
-        public async Task<IEnumerable<EmployeeDetail>> SendEmail()
+        public async Task<IEnumerable<EmployeeDetail>> SendEmail(DateTime Date)
         {
-            var employeeDetails = _employeeService.GetAllEmployeeDetail();
+            var employeeDetails = _employeeService.GetAllEmployeeDetail().Where(emp => emp.Login == Date);
 
             foreach (var employeeDetail in employeeDetails)
             {
                 string subject = "";
                 string content = "";
-                subject = _emailTemplate.Value.ContentTableHeader;
-                content = String.Format(_emailTemplate.Value.ContentTableBody, employeeDetail.Id, employeeDetail.UserId,
+                subject = _emailTemplate.Value.EmailSubject;
+                content = _emailTemplate.Value.ContentTableHeader + String.Format(_emailTemplate.Value.ContentTableBody, employeeDetail.Id, employeeDetail.UserId,
                 employeeDetail.Login, employeeDetail.Logout, employeeDetail.LastUpdateTime, employeeDetail.LastUpdatedBy);
 
                 await _emailNotification.SendEmail(
+                employeeDetail.UserName,
                 subject,
                 content,
                 true);

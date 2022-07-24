@@ -124,3 +124,11 @@ C:\Users\rakesh.pattanayak\Documents\GitHub\EmployeePortalApi\EmployeeLoginInfo\
 C:\Users\rakesh.pattanayak\Documents\GitHub\EmployeePortalApi\EmployeeLoginInfo\obj\Debug\net6.0\EmployeeLoginInfo.pdb
 C:\Users\rakesh.pattanayak\Documents\GitHub\EmployeePortalApi\EmployeeLoginInfo\obj\Debug\net6.0\EmployeeLoginInfo.genruntimeconfig.cache
 C:\Users\rakesh.pattanayak\Documents\GitHub\EmployeePortalApi\EmployeeLoginInfo\obj\Debug\net6.0\ref\EmployeeLoginInfo.dll
+C:\Users\rakesh.pattanayak\Documents\GitHub\EmployeePortalApi\EmployeeLoginInfo\bin\Debug\net6.0\MediatR.dll
+C:\Users\rakesh.pattanayak\Documents\GitHub\EmployeePortalApi\EmployeeLoginInfo\bin\Debug\net6.0\MediatR.Contracts.dll
+C:\Users\rakesh.pattanayak\Documents\GitHub\EmployeePortalApi\EmployeeLoginInfo\bin\Debug\net6.0\Microsoft.Azure.Functions.Extensions.dll
+C:\Users\rakesh.pattanayak\Documents\GitHub\EmployeePortalApi\EmployeeLoginInfo\bin\Debug\net6.0\Microsoft.Azure.WebJobs.Host.dll
+C:\Users\rakesh.pattanayak\Documents\GitHub\EmployeePortalApi\EmployeeLoginInfo\bin\Debug\net6.0\Microsoft.Azure.WebJobs.dll
+C:\Users\rakesh.pattanayak\Documents\GitHub\EmployeePortalApi\EmployeeLoginInfo\bin\Debug\net6.0\Newtonsoft.Json.dll
+C:\Users\rakesh.pattanayak\Documents\GitHub\EmployeePortalApi\EmployeeLoginInfo\bin\Debug\net6.0\SendGrid.dll
+C:\Users\rakesh.pattanayak\Documents\GitHub\EmployeePortalApi\EmployeeLoginInfo\bin\Debug\net6.0\StarkbankEcdsa.dll
