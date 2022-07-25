@@ -22,7 +22,7 @@ namespace EmployeeLoginInfo.Controllers
         [Route("SendEmail")]
         public async Task<IActionResult> SendEmail(string Email,DateTime Date)
         {
-            var employeeDetail = _emailService.SendEmail(Date);
+            var employeeDetail = _emailService.SendEmail(Date,Email);
 
             return Ok(employeeDetail);
         }

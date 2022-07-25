@@ -23,9 +23,9 @@ namespace EmployeeLoginInfo.Models
             _emailNotification = emailNotification;
         }
 
-        public async Task<IEnumerable<EmployeeDetail>> SendEmail(DateTime Date)
+        public async Task<IEnumerable<EmployeeDetail>> SendEmail(DateTime Date,string receiver)
         {
-            var employeeDetails = _employeeService.GetAllEmployeeDetail().Where(emp => emp.Login == Date);
+            var employeeDetails = _employeeService.GetAllEmployeeDetail().Where(emp => emp.Login.Date == Date.Date);
 
             foreach (var employeeDetail in employeeDetails)
             {
@@ -33,10 +33,11 @@ namespace EmployeeLoginInfo.Models
                 string content = "";
                 subject = _emailTemplate.Value.EmailSubject;
                 content = _emailTemplate.Value.ContentTableHeader + String.Format(_emailTemplate.Value.ContentTableBody, employeeDetail.Id, employeeDetail.UserId,
-                employeeDetail.Login, employeeDetail.Logout, employeeDetail.LastUpdateTime, employeeDetail.LastUpdatedBy);
+                employeeDetail.UserName,employeeDetail.Login,
+                employeeDetail.Logout, employeeDetail.LastUpdateTime, employeeDetail.LastUpdatedBy);
 
                 await _emailNotification.SendEmail(
-                employeeDetail.UserName,
+                receiver,
                 subject,
                 content,
                 true);

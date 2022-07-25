@@ -19,12 +19,12 @@ namespace EmployeeLoginInfo.Email
             _emailSettings = emailSettings;
             _employeeService = employeeService;
         }
-        public async Task SendEmail( string receiver,string subject, string content, bool isBodyHtml = true)
+        public async Task SendEmail(string receiver,string subject, string content, bool isBodyHtml = true)
         {
             using (MailMessage message = new MailMessage())
             {
                 message.From = new MailAddress(_emailSettings.Value.Sender, _emailSettings.Value.SenderName);
-                //message.To.Add(new MailAddress("sandeepkgiri20@gmail.com","Sandeep"));
+                //message.To.Add(new MailAddress("sandeepkgiri20@gmail.com", "Sandeep"));
                 message.To.Add(new MailAddress(receiver));
                 message.Subject = subject;
                 message.Body = content;
@@ -38,10 +38,6 @@ namespace EmployeeLoginInfo.Email
                     smtp.DeliveryMethod = SmtpDeliveryMethod.Network;
                     smtp.Send(message);
                 }
-
-                //var toEmail = new EmailAddress(receiver);
-                //var fromEmail = new EmailAddress("rakeshpattanayak56@gmail.com", "Rakesh");
-                //var msg = MailHelper.CreateSingleEmail(fromEmail, toEmail, subject, string.Empty, content);
             }
         }
     }

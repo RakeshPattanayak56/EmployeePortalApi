@@ -8,6 +8,6 @@ namespace Utility.Email
 {
     public interface IEmailNotification
     {
-        public Task SendEmail( string receiver, string subject, string content, bool isBodyHtml=true);
+        public Task SendEmail(string receiver, string subject, string content, bool isBodyHtml=true);
     }
 }
