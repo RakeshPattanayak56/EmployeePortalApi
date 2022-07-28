@@ -50,8 +50,8 @@ namespace EmployeeLoginInfo.Models
                     existingEmployeeDetail.Id = employeeDetail.Id;
                     existingEmployeeDetail.UserId = employeeDetail.UserId;
                     existingEmployeeDetail.UserName = employeeDetail.UserName;
-                    existingEmployeeDetail.Login = employeeDetail.Login;
-                    existingEmployeeDetail.Logout = employeeDetail.Logout;
+                    existingEmployeeDetail.LoginTime = employeeDetail.LoginTime;
+                    existingEmployeeDetail.LogoutTime = employeeDetail.LogoutTime;
                     existingEmployeeDetail.InDeskTimeIn = employeeDetail.InDeskTimeIn;
                     existingEmployeeDetail.InDeskTimeOut = employeeDetail.InDeskTimeOut;
                     existingEmployeeDetail.LastUpdateTime = employeeDetail.LastUpdateTime;

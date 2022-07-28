@@ -1,4 +1,8 @@
+using EmployeeLoginInfo.Email;
+using EmployeeLoginInfo.Email.EmailTemplate;
 using EmployeeLoginInfo.Models;
+using Utility.Email;
+using Utility.Models;
 
 var MyAllowSpecificOrigins = "_myAllowSpecificOrigins";
 
@@ -13,6 +17,10 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddScoped<IEmployeeeDetails, EmployeeService>();
 builder.Services.AddScoped<IAddEmployeeDetails, AddEmployeeService>();
+builder.Services.AddScoped<IEmailService, EmailService>();
+builder.Services.AddScoped<IEmailNotification, EmailNotification>();
+builder.Services.Configure<EmailTemplate>(builder.Configuration.GetSection("EmailTemplate"));
+builder.Services.Configure<EmailSetting>(builder.Configuration.GetSection("EmailSetting"));
 
 
 builder.Services.AddCors(options =>
